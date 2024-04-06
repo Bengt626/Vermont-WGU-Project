@@ -1,0 +1,25 @@
+/* General Styling for page elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Oxygen", Times, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+
+/* Re-usable CSS */
+
+.container {
+    max-width: 1000px;
+}
