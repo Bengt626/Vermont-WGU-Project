@@ -5,11 +5,9 @@
     padding: 0;
 
 }
-
 body {
     font-family: "Oxygen", Times, serif;
 }
-
 img {
     max-width: 100%;
 }
@@ -21,33 +19,70 @@ img {
     justify-content: space-between;
     padding: 15px;
 }
-
-.nav--links {
-    list-style-type: none;
-    display: flex;
-}
-
-.navbar > div {
-    margin: auto 0;
-}
-
-
-.nav--links a {
-    text-decoration: none;
-    color: black;
-}
-
 .navbar img {
     height: 60px;
     width: 60px;
     align-self: flex-start;
 }
+.navbar > div {
+    margin: auto 0;
+}
+.nav--links {
+    list-style-type: none;
+    display: flex;
+}
+.nav--links a {
+    text-decoration: none;
+    color: black;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
 
+/* Section 1 - Just Vermont Heading and subheading */
+.section1 {
+    padding-bottom: 60px;
+}
+.section1 h1 {
+    font-family: "Buda", Times, serif;
+    font-size: 8rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: -1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.section1 h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.2);
+}
 
+/* Section 2 - City description blocks */
+.section2 {
+    position: relative;
+    bottom: 450px;
+}
+.section2 > h1 {
+    font-family: "Caramel", Times, sans;
+    font-weight: 200;
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+    text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.4);
+}
+.city--mont {
+    background-color: red;
+}
+.city--mont img {
+    max-width: 37%;
+    height: auto;
+    border-radius: 25px 0px 0px 25px;
+    position: absolute;
+    top: 200px;
+}
 
 
 /* Re-usable CSS */
 
 .site--container {
     max-width: 1000px;
+    margin: auto;
 }
