@@ -12,6 +12,10 @@ img {
     max-width: 100%;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 /* navbar styling */
 .navbar {
     display: flex;
@@ -20,22 +24,22 @@ img {
     padding: 15px;
 }
 .navbar img {
+    align-self: flex-start;
     height: 60px;
     width: 60px;
-    align-self: flex-start;
 }
 .navbar > div {
     margin: auto 0;
 }
 .nav--links {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
 }
 .nav--links a {
-    text-decoration: none;
-    color: black;
-    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
     padding: 10px;
+    text-decoration: none;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: black;
 }
 
 /* Section 1 - Just Vermont Heading and subheading */
@@ -59,10 +63,10 @@ img {
 
 .section2 {
     position: relative;
+    margin: auto;
     background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/Vermont Desktop Background - For Website Background.jpeg');
     background-size: contain;
     background-position: center;
-    margin: auto;
     /* width: 100%; */
 }
 .section2 > h1 {
@@ -76,24 +80,27 @@ img {
 .city--content{
     position: relative;
     top: 75px;
+    margin: auto;
+    max-width: 1000px;
 }
 /* Montpelier box styling */
 .city--mont {
+    position: relative;
     margin: auto;
-    background-color: rgba(251, 244, 222);
     width: 1100px;
     height: 280px;
-    position: relative;
-    border: 1px solid rgba(128, 128, 128, 0.2);
-    border-radius: 25px;
     text-align: end;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    background-color: rgba(251, 244, 222);
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.198);
+    border-radius: 25px;
 }
 .city--mont img {
-    max-width: 44.7%;
-    height: auto;
-    border-radius: 25px 0px 0px 25px;
     position: absolute;
     left: 0px;
+    height: auto;
+    max-width: 44.7%;
+    border-radius: 25px 0px 0px 25px;
 }
 .city--mont h2, p, a{
     padding: 30px 40px 0px 0px;
@@ -105,23 +112,46 @@ img {
 /* Section 3 - Burlington/Stowe vertical box styling */
 .city--stowe-burlington {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1000px;
+    position: relative;
+    left: 50px;
     margin: auto;
+    max-width: 1000px;
     gap: 120px;
+    flex-wrap: wrap;
     
 }
 .city--vert-box {
-    background-color: red;
-    height: 100px;
-    width: 440px;
-    max-width: 440px;
     position: relative;
     top: 100px;
-
+    max-width: 440px;
+    width: 440px;
+    height: 650px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    background-color: rgba(251, 244, 222);
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.198);
+    border-radius: 25px;
 }
-
+.city--vert-box h2 {
+    padding: 20px 0px 0px 20px;
+}
+.city--vert-box p {
+    padding: 20px 0px 0px 20px;
+}
+.city--vert-box a {
+    float: right;
+}
+.city--vert-box img {
+    position: absolute;
+    bottom: 20px;
+    left: 45px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid grey;
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.365);
+}
 
 
 /* Re-usable CSS */
