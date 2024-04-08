@@ -56,9 +56,14 @@ img {
 }
 
 /* Section 2 - City description blocks */
+
 .section2 {
     position: relative;
-    bottom: 450px;
+    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/Vermont Desktop Background - For Website Background.jpeg');
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+    /* width: 100%; */
 }
 .section2 > h1 {
     font-family: "Caramel", Times, sans;
@@ -68,21 +73,60 @@ img {
     color: white;
     text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.4);
 }
+.city--content{
+    position: relative;
+    top: 75px;
+}
+/* Montpelier box styling */
 .city--mont {
-    background-color: red;
+    margin: auto;
+    background-color: rgba(251, 244, 222);
+    width: 1100px;
+    height: 280px;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 25px;
+    text-align: end;
 }
 .city--mont img {
-    max-width: 37%;
+    max-width: 44.7%;
     height: auto;
     border-radius: 25px 0px 0px 25px;
     position: absolute;
-    top: 200px;
+    left: 0px;
 }
+.city--mont h2, p, a{
+    padding: 30px 40px 0px 0px;
+}
+.city--mont p {
+    padding-bottom: 10px;
+}
+
+/* Section 3 - Burlington/Stowe vertical box styling */
+.city--stowe-burlington {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    gap: 120px;
+    
+}
+.city--vert-box {
+    background-color: red;
+    height: 100px;
+    width: 440px;
+    max-width: 440px;
+    position: relative;
+    top: 100px;
+
+}
+
 
 
 /* Re-usable CSS */
 
 .site--container {
-    max-width: 1000px;
+    max-width: 1920px;
     margin: auto;
 }
