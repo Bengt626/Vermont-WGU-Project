@@ -107,6 +107,8 @@ h2 {
 }
 .city--mont p {
     padding-bottom: 10px;
+    font-weight: 450;
+    font-size: 1.1rem;
 }
 
 /* Section 3 - Burlington/Stowe vertical box styling */
@@ -119,7 +121,6 @@ h2 {
     max-width: 1000px;
     gap: 120px;
     flex-wrap: wrap;
-    
 }
 .city--vert-box {
     position: relative;
@@ -137,6 +138,9 @@ h2 {
 }
 .city--vert-box p {
     padding: 20px 0px 0px 20px;
+    font-weight: 450;
+    font-size: 1.1rem;
+    max-width: 400px;
 }
 .city--vert-box a {
     float: right;
@@ -148,10 +152,51 @@ h2 {
     width: 350px;
     height: 350px;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 20px;
     border: 1px solid grey;
     box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.365);
 }
+
+/* Section 4 */
+.section4 {
+    position: relative;
+    top: 180px;
+}
+.section4 > h2 {
+    position: relative;
+    right: 265px;
+}
+
+.walk--containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: space-around;
+    width: 1100px;
+    margin: auto;
+}
+.walk--container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 400px;
+}
+.walk--container1 > img {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 230px;
+}
+#walk--container-1_image {
+    flex-grow: 2;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.198);
+    width: 350px;
+    height:350px;
+}
+/* .walk--containers * img {
+    width: 350px;
+    height: 350px;
+} */
 
 
 /* Re-usable CSS */
@@ -159,4 +204,5 @@ h2 {
 .site--container {
     max-width: 1920px;
     margin: auto;
+    text-align: center;
 }
