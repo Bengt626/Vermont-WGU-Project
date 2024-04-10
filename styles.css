@@ -15,8 +15,12 @@ img {
 h2 {
     font-size: 2rem;
 }
+a {
+    font-weight: 500;
+}
 
 /* navbar styling */
+
 .navbar {
     display: flex;
     flex-flow: row-reverse nowrap;
@@ -27,6 +31,7 @@ h2 {
     align-self: flex-start;
     height: 60px;
     width: 60px;
+    object-fit: cover;
 }
 .navbar > div {
     margin: auto 0;
@@ -43,6 +48,7 @@ h2 {
 }
 
 /* Section 1 - Just Vermont Heading and subheading */
+
 .section1 {
     padding-bottom: 60px;
 }
@@ -64,6 +70,7 @@ h2 {
 .section2 {
     position: relative;
     margin: auto;
+    padding-bottom: 100px;
     background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/Vermont Desktop Background - For Website Background.jpeg');
     background-size: contain;
     background-position: center;
@@ -92,7 +99,7 @@ h2 {
     text-align: end;
     border: 1px solid rgba(128, 128, 128, 0.2);
     background-color: rgba(251, 244, 222);
-    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.198);
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.3);
     border-radius: 25px;
 }
 .city--mont img {
@@ -102,7 +109,7 @@ h2 {
     max-width: 44.7%;
     border-radius: 25px 0px 0px 25px;
 }
-.city--mont h2, p, a{
+.city--mont aside{
     padding: 30px 40px 0px 0px;
 }
 .city--mont p {
@@ -112,6 +119,7 @@ h2 {
 }
 
 /* Section 3 - Burlington/Stowe vertical box styling */
+
 .city--stowe-burlington {
     display: flex;
     justify-content: space-between;
@@ -134,7 +142,9 @@ h2 {
     border-radius: 25px;
 }
 .city--vert-box h2 {
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px 20px 20px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 25px 25px 0px 0px;
 }
 .city--vert-box p {
     padding: 20px 0px 0px 20px;
@@ -144,6 +154,8 @@ h2 {
 }
 .city--vert-box a {
     float: right;
+    font-size: 1.2rem;
+    margin: 25px 15px 0px 0px;
 }
 .city--vert-box img {
     position: absolute;
@@ -152,20 +164,29 @@ h2 {
     width: 350px;
     height: 350px;
     overflow: hidden;
+    object-fit: cover;
     border-radius: 20px;
     border: 1px solid grey;
     box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.365);
 }
 
-/* Section 4 */
+/* Section 4 - Camping - Fishing - Skiing*/
+
 .section4 {
     position: relative;
     top: 180px;
+    width: 1200px;
+    margin: auto;
 }
-.section4 > h2 {
-    position: relative;
-    right: 265px;
-}
+ .section4 > :first-child {
+    text-align: left;
+    width: 1100;
+    margin: auto;
+    padding: 5px 20px;
+    background-color: rgba(251, 244, 222);
+    box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.198);
+    border-radius: 15px;
+} 
 
 .walk--containers {
     display: flex;
@@ -175,29 +196,94 @@ h2 {
     width: 1100px;
     margin: auto;
 }
+.walk--containers > h3 {
+    padding: 25px 0px;
+    font-size: 1.5rem;
+    text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.25);
+}
 .walk--container1 {
     display: flex;
     justify-content: space-between;
     width: 1100px;
     height: 400px;
+    align-items: center;
 }
 .walk--container1 > img {
-    display: flex;
-    align-items: center;
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
 }
 #walk--container-1_image {
     flex-grow: 2;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.198);
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.25);
     width: 350px;
     height:350px;
+    margin-left: 40px;
 }
-/* .walk--containers * img {
+.walk--container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.walk--container2 > :first-child {
+    width: 200px;
+    height: 200px;
+    transform: scaleX(-1);
+}
+.walk--container2_img {
     width: 350px;
     height: 350px;
-} */
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.25);
+    margin-right: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
 
+/* Section 5 - State Parks */
+.section5 {
+    position: relative;
+    top: 200px;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.park--conts {
+    display: flex;
+    justify-content: space-around;
+}
+.park--cont {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 475px;
+    background-color: rgba(251, 244, 222);
+    border-radius: 25px;
+    margin: 25px 0px;
+    text-align: center;
+    box-shadow: -2px 1px 7px rgba(128, 128, 128, 0.5);
+}
+.park--cont img {
+    width: 375px;
+    height: 295px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border-radius: 25px 25px 0px 0px;
+}
+.park--cont_text {
+    width: 400px;
+    margin: auto;
+}
+.footer--separator {
+    position: relative;
+    top: 15px;
+    margin: auto;
+    width: 800px;
+    height: 6px;
+    background-color: rgba(237, 237, 237, 0.9);
+    border-radius: 2px;
+    
+}
 
 /* Re-usable CSS */
 
