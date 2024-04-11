@@ -17,6 +17,7 @@ h2 {
 }
 a {
     font-weight: 500;
+    color: black;
 }
 
 /* navbar styling */
@@ -32,6 +33,7 @@ a {
     height: 60px;
     width: 60px;
     object-fit: cover;
+    overflow: visible;
 }
 .navbar > div {
     margin: auto 0;
@@ -261,28 +263,67 @@ a {
     margin: 25px 0px;
     text-align: center;
     box-shadow: -2px 1px 7px rgba(128, 128, 128, 0.5);
+    flex-wrap: wrap;
 }
 .park--cont img {
     width: 375px;
     height: 295px;
     overflow: hidden;
     object-fit: cover;
-    margin-bottom: 25px;
     border-radius: 25px 25px 0px 0px;
 }
+.park--cont p {
+    padding-top: 10px;
+}
 .park--cont_text {
-    width: 400px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    padding: 8px 25px;
 }
 .footer--separator {
     position: relative;
-    top: 15px;
+    top: 55px;
     margin: auto;
     width: 800px;
     height: 6px;
     background-color: rgba(237, 237, 237, 0.9);
     border-radius: 2px;
     
+}
+
+/* Footer */
+.section6 {
+    position: relative;
+    top: 300px;
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+.foot--conts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot--conts div:first-of-type li {
+    list-style-type: none;
+    padding: 5px 0px;
+}
+.foot--cont img {
+    width: 260px;
+    height: 260px;
+    overflow: visible;
+    object-fit: cover;
+}
+.qwert {
+    flex: 1;
+    height: 264;
+}
+.qwerty {
+    flex: 0 0 auto;
 }
 
 /* Re-usable CSS */
