@@ -76,7 +76,6 @@ a {
     background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/Vermont Desktop Background - For Website Background.jpeg');
     background-size: contain;
     background-position: center;
-    /* width: 100%; */
 }
 .section2 > h1 {
     font-family: "Caramel", Times, sans;
@@ -298,8 +297,9 @@ a {
 .section6 {
     position: relative;
     top: 300px;
-    width: 1200px;
-    height: 300px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
     margin: auto;
     text-align: center;
 }
@@ -332,4 +332,48 @@ a {
     max-width: 1920px;
     margin: auto;
     text-align: center;
+}
+
+/*                          Styling for City Pages                            */
+
+.cp-section1 {
+    position: relative;
+    margin: auto;
+    height: 600px;
+    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/montp-backg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sec1--title_text {
+    position: relative;
+    top: 50px;
+    left: 40px;
+    text-align: start;
+}
+.sec1--title_text h1 {
+    font-size: 3.0rem;
+    font-weight: 900;
+}
+.sec1--title_text p {
+    font-size: 1.3rem;
+    color: white;
+}
+.cp-section2 {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+}
+.cp-section2__text {
+    width: 500px;
+    /* height: auto; */
+}
+.cp-section2__text p {
+    padding-top: 25px;
+}
+.cp-section2__img {
+    width: 250px;
+    /* height: auto; */
 }
