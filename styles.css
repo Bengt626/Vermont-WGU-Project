@@ -181,7 +181,7 @@ a {
 }
  .section4 > :first-child {
     text-align: left;
-    width: 1100;
+    width: 1100px;
     margin: auto;
     padding: 5px 20px;
     background-color: rgba(251, 244, 222);
@@ -193,7 +193,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: space-around;
     width: 1100px;
     margin: auto;
 }
@@ -255,33 +254,36 @@ a {
 .park--cont {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    justify-content: space-between;
+    max-width: 375px;
     height: 475px;
     background-color: rgba(251, 244, 222);
     border-radius: 25px;
     margin: 25px 0px;
     text-align: center;
     box-shadow: -2px 1px 7px rgba(128, 128, 128, 0.5);
-    flex-wrap: wrap;
 }
 .park--cont img {
     width: 375px;
     height: 295px;
     overflow: hidden;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 25px 25px 0px 0px;
 }
-.park--cont p {
+/* .park--cont p {
     padding-top: 10px;
-}
+} */
 .park--cont_text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    height: 180px;
-    padding: 8px 25px;
+    height: 160px;
+    padding: 0px 15px;
+    margin-bottom: 10px;
 }
+/* .park--cont a {
+    align-content: flex-end;
+} */
 .footer--separator {
     position: relative;
     top: 55px;
@@ -302,28 +304,35 @@ a {
     height: auto;
     margin: auto;
     text-align: center;
+    padding-bottom: 20px;
 }
 .foot--conts {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+.foot--cont {
+    padding: auto;
 }
 .foot--conts div:first-of-type li {
     list-style-type: none;
     padding: 5px 0px;
 }
 .foot--cont img {
-    width: 260px;
-    height: 260px;
+    width: 230px;
+    height: 230px;
     overflow: visible;
     object-fit: cover;
 }
 .qwert {
     flex: 1;
-    height: 264;
+    height: 264px;
 }
-.qwerty {
-    flex: 0 0 auto;
+.foot--conts div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px;
 }
 
 /* Re-usable CSS */
@@ -333,9 +342,25 @@ a {
     margin: auto;
     text-align: center;
 }
+.txtimg-cont {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    align-items: center;
+    padding: 50px 0px 65px 0px;
+}
 
 /*                          Styling for City Pages                            */
 
+.cpburl-section1 {
+    position: relative;
+    margin: auto;
+    height: 600px;
+    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/burl-3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .cp-section1 {
     position: relative;
     margin: auto;
@@ -359,13 +384,7 @@ a {
     font-size: 1.3rem;
     color: white;
 }
-.cp-section2 {
-    display: flex;
-    justify-content: space-around;
-    width: 1000px;
-    align-items: center;
-    padding: 50px 0px 50px 0px;
-}
+/* Section 2 */
 .cp-section2__text {
     width: 500px;
     /* height: auto; */
@@ -375,5 +394,36 @@ a {
 }
 .cp-section2__img {
     width: 250px;
-    /* height: auto; */
+}
+/* Section 3 */
+.cp-section3 {
+    height: 350px;
+    width: auto;
+    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/mont-banner-1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#cp-section3__img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+.cp-section4 {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.cp-footer {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
 }
