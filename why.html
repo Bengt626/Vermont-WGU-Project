@@ -13,12 +13,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
         <title>Why Vermont</title>
     </head>
 <body class="why">
     <header>
         <!-- Start of navbar code -->
-            <nav class="navbar site--container">
+            <nav class="navbar">
                <div>
                     <ul class="nav--links">
                         <li><a href="index.html">Vermont</a></li>
@@ -44,38 +45,139 @@
     <section class="sec1">
         <h2>Our Best Seasonal Attractions</h2>
         <div class="site--container why--winterevents">
-            <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/elmore.jpeg" alt="" class="winterevents__1"/>
-            <p class="winterevents__2">Text for image 1</p>
-            <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/elmore.jpeg" alt="" class="winterevents__3"/>
-            <p class="winterevents__4">Text for image 2</p>
-            <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/elmore.jpeg" alt="" class="winterevents__5"/>
-            <p class="winterevents__6">Text for image 3</p>
+            <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/seas-1.jpg" alt="Fruit and veggie stand" class="winterevents__1"/>
+            <p class="winterevents__2 winterevents__txt">See Our Summer Farmers Markets<br/><br/>In our small state of Vermont, there are over 45 different farmers markets to attend each week. No matter where you are in the state, there's sure to be local vendors slinging veggies somewhere near you!</p>
+            <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/seas-2.jpeg" alt="Person skiing holding a Pride flag" class="winterevents__3"/>
+            <p class="winterevents__4 winterevents__txt">Join Us for Winter!<br/><br/>We love to go outside when it gets cold and the snow comes out. We have events ranging from the Winter Rendezvous in Stowe, to the annual ski jumps, to the Paran Plunge in North Bennington. Have a unique Vermont experience!</p>
+            <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/seas-3.jpg" alt="Stowe Winter Carnival" class="winterevents__5"/>
+            <p class="winterevents__6 winterevents__txt">The Stowe Winter Carnival<br/><br/>The Winter Carnival is something the residents look forward to putting on each year. There's an ice carving competition, cross-country ski tours, and hot cider welcoming of all.</p>
         </div>
     </section>
-    <section class="why--banner-1">
-
-    </section>
-    <section class="sec2">
-        <div class="left-col">
-            <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/elmore.jpeg" alt=""/>
+    <section class="why--banner-1 site--container">
+        <div class="why--banner-1__cont">
+            <h2>Still Need Help Finding Somewhere?</h2>
+            <p>Click the attraction name to find out more!</p>
+            <table>
+                <tr>
+                    <th>Attraction</th>
+                    <th>Location</th>
+                    <th>Date/Time of Year</th>
+                </tr>
+                <tr>
+                    <td><a href="https://billingsfarm.org/" target="_blank">Billings Farm and Museum</a></td>
+                    <td>Woodstock</td>
+                    <td>Depends on time of year</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://gostowe.com/hiking-moss-glen-falls/" target="_blank">Glen Falls</a></td>
+                    <td>Stowe</td>
+                    <td>Year Round</td>
+                </tr>
+                <tr>
+                    <td><a href="https://churchstmarketplace.com/" target="_blank">Church Street Marketplace</a></td>
+                    <td>Burlington</td>
+                    <td>Year Round (Hours vary)</td>
+                </tr>
+            </table>
         </div>
-        <div class="right-col"><p>Random text for now</p></div>
     </section>
-    <section class="sec3">
-        <div class="why__form">
-            <form>
+    <section class="sec2 site--container">
 
+        
+    </section>
+    <section class="sec3 site--container">
+        <h2>Check Out Even More of Our Beauty</h2>
+        <div class="gallery">
+            <div class="gal_item">
+                    <h3 class="gal_h3">Kettle Pond</h3>
+                    <div class="gal_img">
+                        <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/kettle.jpeg" alt="Kettle Pond">
+                    </div>
+            </div>
+            <div class="gal_item">
+                    <h3 class="gal_h3">Taconic Mountains Ramble</h3>
+                    <div class="gal_img">
+                        <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/Taconic.jpeg" alt="Taconic Mountains Ramble">
+                    </div>
+            </div>
+            <div class="gal_item">
+                    <h3 class="gal_h3">Quechee Gorge</h3>
+                    <div class="gal_img">
+                        <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/quechee.jpeg" alt="Quechee Gorge">
+                    </div>
+            </div>
+            <div class="gal_item">
+                    <h3 class="gal_h3">Lake Willoughby</h3>
+                    <div class="gal_img">
+                        <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/lakewill.jpeg" alt="Lake Willoughby">
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec4 site--container">
+        <aside>
+            <h3>Have Feedback or Concerns?</h3>
+            <p>Fill out the form and we'll have someone reach out ASAP</p>
+        </aside>
+        <div class="why__form" id="form">
+            <div id="error"></div>
+            <form action="#" method="" id="formjs">
+                <fieldset class="cont-left">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </fieldset>
+                <fieldset class="cont-right">
+                    <label for="emailver">Verify Your Email</label>
+                    <input type="text" id="emailver" name="emailver" placeholder="Verify Email">
+
+                    <label for="visit" class="form-sel__label">How Many Visits?</label>
+                    <select id="visit" name="visit">
+                        <option value="one">Once</option>
+                        <option value="three">Less than 3 times</option>
+                        <option value="five">Less than 5 times</option>
+                        <option value="ten">More than 10 times</option>
+                        <option value="live">I Live Here</option>
+                    </select>
+                </fieldset>
+                <div class="bottom-form">
+                    <textarea name="comment" id="tarea" rows="6" cols="18" placeholder="Enter your comment here..."></textarea>
+                    <button class="form__button">SUBMIT</button>
+                </div>
             </form>
         </div>
     </section>
-    <section class="sec4">
-        <div class="why__gallery-cont">
-            <div class="why__gal-1"><img src="" alt=""/></div>
-            <div class="why__gal-2"><img src="" alt=""/></div>
-            <div class="why__gal-3"><img src="" alt=""/></div>
-            <div class="why__gal-4"><img src="" alt=""/></div>
+    <section class="sec6 site--container">
+        <div class="foot--conts">
+            <div class="foot--cont qwert">
+                <h3 id="foot-cont_link">Links and Resources</h3>
+                <ul>
+                    <a href="https://www.vermont.gov/help#gsc.tab=0" target="_blank"><li>Help</li></a>
+                    <a href="https://www.vermont.gov/policies#gsc.tab=0" target="_blank"><li>Policies</li></a>
+                    <a href="https://governor.vermont.gov/" target="_blank"><li>Our Governor</li></a>
+                    <a href="https://www.vermont.gov/policies/privacy#gsc.tab=0" target="_blank"><li>Privacy</li></a>
+                    <a href="https://www.vermont.gov/policies/accessibility#gsc.tab=0" target="_blank"><li>Accessibility</li></a>
+                    <a href="https://www.vermont.gov/latest-news#gsc.tab=0" target="_blank"><li>Latest News</li></a>
+                </ul>
+            </div>
+            <div class="foot--cont qwert">
+                <a href="why.html#form">
+                    <img src="/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/Vermont Coat of Arms.png" alt="Vermont Coat of Arms"/>
+                </a>
+            </div>
+            <div class="foot--cont qwert">
+                <h3>Concerned or Need to Reach Out</h3>
+                <p>Click the button below or the Coat of Arms to the left</p>
+                <a href="why.html#form">
+                    <div class="foot--button">
+                    <p>Click Here</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    </section>
+    </section>  
 </main>
 </body>
 </html>
