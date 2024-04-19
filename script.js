@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     emailver.addEventListener('input', function() {
         if(email.value === emailver.value) {
-            error.textContent = "Email's Match";
+            error.textContent = "Emails Match";
             error.style.color = 'green';
         } else {
             error.textContent = "Emails Do Not Match";
