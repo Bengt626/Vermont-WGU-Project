@@ -76,7 +76,7 @@ a:hover {
     position: relative;
     margin: auto;
     padding-bottom: 100px;
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/Vermont Desktop Background - For Website Background.jpeg');
+    background-image: url('Vermont Desktop Background - For Website Background.jpeg');
     background-size: contain;
     background-position: center;
 }
@@ -360,7 +360,7 @@ a:hover {
     position: relative;
     margin: auto;
     height: 600px;
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/burl-3.jpeg');
+    background-image: url('burl-3.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -369,7 +369,7 @@ a:hover {
     position: relative;
     margin: auto;
     height: 600px;
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/sto-2.jpeg');
+    background-image: url('sto-2.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -378,7 +378,7 @@ a:hover {
     position: relative;
     margin: auto;
     height: 600px;
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/montp-backg.jpeg');
+    background-image: url('montp-backg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -410,7 +410,7 @@ a:hover {
 .cp-section3 {
     height: 350px;
     width: auto;
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/mont-banner-1.jpeg');
+    background-image: url('mont-banner-1.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -418,7 +418,7 @@ a:hover {
 .cpburl-section3 {
     height: 350px;
     width: auto;
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/burl-banner.jpeg');
+    background-image: url('burl-banner.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -426,7 +426,7 @@ a:hover {
 .cpsto-section3 {
     height: 350px;
     width: auto;
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/sto-banner.jpeg');
+    background-image: url('sto-banner.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -482,7 +482,7 @@ a:hover {
     display: flex;
     width: 100%;
     height: 450px;
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/elmore.jpeg');
+    background-image: url('elmore.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -555,7 +555,7 @@ a:hover {
     float: right;
 }
 .why--banner-1 {
-    background-image: url('/Users/dom/Documents/WGU/D277 - Front End Web Development/Vermont Website/Images/burl-banner-2.jpeg');
+    background-image: url('burl-banner-2.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
